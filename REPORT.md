@@ -1,4 +1,4 @@
-# Peer Coordination Program - Detailed Report
+# Peer Coordination Program
 
 ## Overview
 
@@ -75,7 +75,7 @@ The program uses a combination of UDP socket programming and the `select()` even
    int getaddrinfo(const char *node, const char *service, const struct addrinfo *hints, struct addrinfo **res);
    ```
 
-   Used to resolve peer hostnames to IP addresses for communication.
+   Used to resolve hostnames to IP addresses for communication.
 
 ## Timeout and Interval Management
 
@@ -89,10 +89,6 @@ These timeouts are managed using the `time()` function and comparing the elapsed
 ## Logging and Debugging
 
 The program includes a logging function that prepends timestamps to messages. Debug mode can be enabled with the `-d` flag, which provides more detailed logging of events such as sending and receiving messages.
-
-## Docker Implementation
-
-The program is containerized using Docker, which allows for easy deployment and scaling. The `Dockerfile` sets up an Ubuntu environment, installs necessary tools, and compiles the program. The `docker-compose.yml` file defines multiple peer services, each running in its own container, facilitating the simulation of a multi-peer network environment.
 
 ## Conclusion
 

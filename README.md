@@ -9,11 +9,7 @@ This program implements a peer-to-peer communication system over UDP sockets whe
 
 ## Usage
 
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   cd <repository-directory>
-   ```
+1. Clone the repository and navigate to the implementation.
 
 2. Build the Docker image:
    ```

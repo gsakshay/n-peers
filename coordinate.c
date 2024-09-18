@@ -293,8 +293,8 @@ int main(int argc, char *argv[]) {
             for (int i = 0; i < num_peers; i++) {
                 if (i != current_peer_index) {
                     if (!peers[i].ack_received || !peers[i].heartbeat_received) {
-                    all_communication_complete = 0;
-                    break;
+                        all_communication_complete = 0;
+                        break;
                     }
                 } 
             }
