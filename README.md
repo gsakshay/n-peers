@@ -42,6 +42,9 @@ This program implements a peer-to-peer communication system over UDP sockets whe
 - `Dockerfile`: Defines the Docker image for the program.
 - `docker-compose.yml`: Defines the multi-container Docker application.
 
+## NEW
+- Similar program implementation in Go is available, developed learning Golang.
+
 ## Troubleshooting
 
 If you encounter any issues:
