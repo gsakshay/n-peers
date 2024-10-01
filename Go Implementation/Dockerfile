@@ -13,7 +13,7 @@ COPY go.mod ./
 COPY . .
 
 # Build the Go application
-RUN go build -o coordinate
+RUN go build -o npeers main.go peerManager.go
 
 # Start
-ENTRYPOINT ["/app/coordinate"]
+ENTRYPOINT ["/app/npeers"]
